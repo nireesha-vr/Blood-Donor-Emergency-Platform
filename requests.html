@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Active Emergency Requests | BloodConnect</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-droplet"></i>
+        <span>BloodConnect</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="find-blood.html" class="nav-link">Find Blood</a></li>
+          <li><a href="donor.html" class="nav-link">Become a Donor</a></li>
+          <li><a href="emergency-request.html" class="nav-link">Emergency Request</a></li>
+          <li><a href="requests.html" class="nav-link active">Requests</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="emergency-request.html" class="nav-link nav-btn"><i class="fa-solid fa-truck-medical"></i> Emergency</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content container">
+
+    <div class="form-page-header">
+      <div class="section-title">
+        <h2>Active Emergency Requests</h2>
+        <p>Live community emergency feed sorted by critical urgency. Respond to help save lives.</p>
+      </div>
+    </div>
+
+    <!-- Filter Buttons Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="All">All Requests</button>
+      <button class="filter-btn" data-filter="Critical"><i class="fa-solid fa-circle-exclamation" style="color: var(--danger-color);"></i> Critical</button>
+      <button class="filter-btn" data-filter="Urgent"><i class="fa-solid fa-triangle-exclamation" style="color: var(--warning-color);"></i> Urgent</button>
+      <button class="filter-btn" data-filter="Normal"><i class="fa-solid fa-circle-info" style="color: var(--info-color);"></i> Normal</button>
+    </div>
+
+    <!-- Requests Feed Grid -->
+    <div id="requestsFeedGrid" class="requests-grid">
+      <!-- Dynamic Request Cards Inserted via script.js -->
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-droplet"></i>
+          <span>BloodConnect</span>
+        </a>
+        <p>Connecting life-saving blood donors with patients during urgent medical emergencies.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="find-blood.html">Find Blood</a></li>
+          <li><a href="donor.html">Become a Donor</a></li>
+          <li><a href="emergency-request.html">Emergency Request</a></li>
+          <li><a href="requests.html">Active Requests</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Categories</h4>
+        <ul class="footer-links">
+          <li><a href="requests.html">Critical Emergencies</a></li>
+          <li><a href="requests.html">Urgent Requests</a></li>
+          <li><a href="requests.html">Scheduled Transfusions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-phone"></i> Emergency Helpline: 1800-BLOOD-HELP</li>
+          <li><i class="fa-solid fa-envelope"></i> requests@bloodconnect.org</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; 2026 BloodConnect Platform. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Global JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

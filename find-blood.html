@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Blood Donor | BloodConnect</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-droplet"></i>
+        <span>BloodConnect</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="find-blood.html" class="nav-link active">Find Blood</a></li>
+          <li><a href="donor.html" class="nav-link">Become a Donor</a></li>
+          <li><a href="emergency-request.html" class="nav-link">Emergency Request</a></li>
+          <li><a href="requests.html" class="nav-link">Requests</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="emergency-request.html" class="nav-link nav-btn"><i class="fa-solid fa-truck-medical"></i> Emergency</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content container">
+
+    <div class="form-page-header">
+      <div class="section-title">
+        <h2>Find a Blood Donor</h2>
+        <p>Search verified voluntary blood donors by blood group and city location.</p>
+      </div>
+    </div>
+
+    <!-- Search Form -->
+    <div class="search-card">
+      <form id="searchForm">
+        <div class="search-form-grid">
+          <div class="form-group">
+            <label for="searchBloodGroup">Blood Group</label>
+            <select id="searchBloodGroup" class="form-control">
+              <option value="All">All Blood Groups</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="searchCity">City Location</label>
+            <input type="text" id="searchCity" class="form-control" placeholder="Enter city (e.g. Chennai)">
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-magnifying-glass"></i> Search Donors
+          </button>
+
+          <button type="button" id="resetSearchBtn" class="btn btn-outline">
+            <i class="fa-solid fa-rotate-left"></i> Reset
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Search Results Grid -->
+    <div id="donorResultsGrid" class="results-grid">
+      <!-- Dynamic Donor Cards Inserted via script.js -->
+    </div>
+
+    <!-- Blood Compatibility Section -->
+    <div class="compatibility-box">
+      <div class="section-title" style="margin-bottom: 1.5rem;">
+        <h2>Blood Type Compatibility Guide</h2>
+        <p>Quick reference for compatible donor and recipient blood types during medical transfusions.</p>
+      </div>
+
+      <div class="compatibility-grid">
+        <div class="compat-card">
+          <h4><i class="fa-solid fa-droplet"></i> Universal Donor: O-</h4>
+          <p><strong>O Negative (O-)</strong> blood can be donated to patients of any blood group (A+, A-, B+, B-, AB+, AB-, O+, O-). Highly requested in trauma emergencies.</p>
+        </div>
+
+        <div class="compat-card">
+          <h4><i class="fa-solid fa-heart-pulse"></i> Universal Recipient: AB+</h4>
+          <p>Patients with <strong>AB Positive (AB+)</strong> blood group can safely receive red blood cells from all donor blood groups.</p>
+        </div>
+
+        <div class="compat-card">
+          <h4><i class="fa-solid fa-shield-halved"></i> Group A & B Compatibility</h4>
+          <p><strong>Group A</strong> can donate to A and AB. <strong>Group B</strong> can donate to B and AB. Rh-negative types can donate to both Rh-positive and Rh-negative recipients.</p>
+        </div>
+
+        <div class="compat-card">
+          <h4><i class="fa-solid fa-clock-rotate-left"></i> Donation Frequency</h4>
+          <p>Healthy individuals can donate whole blood every <strong>90 days (3 months)</strong>. Always ensure you are well-hydrated and rested before donating.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-droplet"></i>
+          <span>BloodConnect</span>
+        </a>
+        <p>Connecting life-saving blood donors with patients during urgent medical emergencies.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="find-blood.html">Find Blood</a></li>
+          <li><a href="donor.html">Become a Donor</a></li>
+          <li><a href="emergency-request.html">Emergency Request</a></li>
+          <li><a href="requests.html">Active Requests</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Blood Types</h4>
+        <ul class="footer-links">
+          <li><a href="find-blood.html?group=O-">O Negative Donors</a></li>
+          <li><a href="find-blood.html?group=AB%2B">AB Positive Donors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-phone"></i> Emergency: 1800-BLOOD-HELP</li>
+          <li><i class="fa-solid fa-envelope"></i> help@bloodconnect.org</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; 2026 BloodConnect Platform. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Global JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

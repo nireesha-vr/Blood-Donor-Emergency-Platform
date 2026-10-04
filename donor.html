@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become a Donor | BloodConnect</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-droplet"></i>
+        <span>BloodConnect</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="find-blood.html" class="nav-link">Find Blood</a></li>
+          <li><a href="donor.html" class="nav-link active">Become a Donor</a></li>
+          <li><a href="emergency-request.html" class="nav-link">Emergency Request</a></li>
+          <li><a href="requests.html" class="nav-link">Requests</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="emergency-request.html" class="nav-link nav-btn"><i class="fa-solid fa-truck-medical"></i> Emergency</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content container">
+
+    <div class="form-page-header">
+      <div class="section-title">
+        <h2>Become a Blood Donor</h2>
+        <p>Register yourself in our voluntary blood donor directory to save lives in your community.</p>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <form id="donorForm" novalidate>
+        <div class="form-grid">
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="fullName">Full Name <span class="required">*</span></label>
+            <input type="text" id="fullName" class="form-control" placeholder="e.g. Arun Kumar" required>
+            <span class="error-text">Please enter your full name.</span>
+          </div>
+
+          <!-- Age -->
+          <div class="form-group">
+            <label for="age">Age (Years) <span class="required">*</span></label>
+            <input type="number" id="age" class="form-control" placeholder="18 - 65" min="18" max="65" required>
+            <span class="error-text">Must be between 18 and 65 years old.</span>
+          </div>
+
+          <!-- Gender -->
+          <div class="form-group">
+            <label for="gender">Gender <span class="required">*</span></label>
+            <select id="gender" class="form-control" required>
+              <option value="" disabled selected>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <!-- Blood Group Dropdown -->
+          <div class="form-group">
+            <label for="bloodGroup">Blood Group <span class="required">*</span></label>
+            <select id="bloodGroup" class="form-control" required>
+              <option value="" disabled selected>Select Blood Group</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" class="form-control" placeholder="10-digit Mobile Number" pattern="[0-9]{10}" required>
+            <span class="error-text">Please enter a valid 10-digit number.</span>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
+          </div>
+
+          <!-- City -->
+          <div class="form-group">
+            <label for="city">City <span class="required">*</span></label>
+            <input type="text" id="city" class="form-control" placeholder="e.g. Chennai" required>
+          </div>
+
+          <!-- Availability -->
+          <div class="form-group">
+            <label for="availability">Availability Status <span class="required">*</span></label>
+            <select id="availability" class="form-control" required>
+              <option value="Available">Available to Donate</option>
+              <option value="Not Available">Not Available Currently</option>
+            </select>
+          </div>
+
+          <!-- Last Donation Date -->
+          <div class="form-group full-width">
+            <label for="lastDonation">Last Donation Date (Optional)</label>
+            <input type="date" id="lastDonation" class="form-control">
+          </div>
+
+          <!-- Full Address -->
+          <div class="form-group full-width">
+            <label for="address">Residential Address / Area <span class="required">*</span></label>
+            <textarea id="address" class="form-control" placeholder="Enter street address, locality or area" required></textarea>
+          </div>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-user-plus"></i> Register as Donor
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-droplet"></i>
+          <span>BloodConnect</span>
+        </a>
+        <p>Connecting life-saving blood donors with patients during urgent medical emergencies.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="find-blood.html">Find Blood</a></li>
+          <li><a href="donor.html">Become a Donor</a></li>
+          <li><a href="emergency-request.html">Emergency Request</a></li>
+          <li><a href="requests.html">Active Requests</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">Eligibility Requirements</a></li>
+          <li><a href="about.html">Donation Tips</a></li>
+          <li><a href="requests.html">Emergency Hotline</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-phone"></i> Helpline: 1800-BLOOD-HELP</li>
+          <li><i class="fa-solid fa-envelope"></i> donor@bloodconnect.org</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; 2026 BloodConnect Platform. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Global JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

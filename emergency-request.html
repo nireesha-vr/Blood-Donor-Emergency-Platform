@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Request | BloodConnect</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-droplet"></i>
+        <span>BloodConnect</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="find-blood.html" class="nav-link">Find Blood</a></li>
+          <li><a href="donor.html" class="nav-link">Become a Donor</a></li>
+          <li><a href="emergency-request.html" class="nav-link active">Emergency Request</a></li>
+          <li><a href="requests.html" class="nav-link">Requests</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="emergency-request.html" class="nav-link nav-btn"><i class="fa-solid fa-truck-medical"></i> Emergency</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content container">
+
+    <div class="form-page-header">
+      <div class="section-title">
+        <h2>Request Blood in an Emergency</h2>
+        <p>Post an urgent request to notify available donors and community volunteers immediately.</p>
+      </div>
+    </div>
+
+    <div class="form-card" style="border-top: 5px solid var(--primary-color);">
+      <form id="emergencyForm" novalidate>
+        <div class="form-grid">
+
+          <!-- Patient Name -->
+          <div class="form-group">
+            <label for="patientName">Patient Name <span class="required">*</span></label>
+            <input type="text" id="patientName" class="form-control" placeholder="Patient's full name" required>
+          </div>
+
+          <!-- Blood Group Required -->
+          <div class="form-group">
+            <label for="bloodGroupReq">Blood Group Required <span class="required">*</span></label>
+            <select id="bloodGroupReq" class="form-control" required>
+              <option value="" disabled selected>Select Required Blood Group</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </div>
+
+          <!-- Units Required -->
+          <div class="form-group">
+            <label for="units">Units Required (Bags) <span class="required">*</span></label>
+            <input type="number" id="units" class="form-control" placeholder="e.g. 2" min="1" max="10" required>
+          </div>
+
+          <!-- Emergency Level -->
+          <div class="form-group">
+            <label for="emergencyLevel">Emergency Priority Level <span class="required">*</span></label>
+            <select id="emergencyLevel" class="form-control" required>
+              <option value="Critical">Critical (Immediate / Surgery)</option>
+              <option value="Urgent">Urgent (Within 24 Hours)</option>
+              <option value="Normal">Normal (Scheduled Procedure)</option>
+            </select>
+          </div>
+
+          <!-- Hospital Name -->
+          <div class="form-group">
+            <label for="hospital">Hospital Name <span class="required">*</span></label>
+            <input type="text" id="hospital" class="form-control" placeholder="e.g. Apollo Hospital" required>
+          </div>
+
+          <!-- Hospital Location / Area -->
+          <div class="form-group">
+            <label for="location">Hospital Location / Street <span class="required">*</span></label>
+            <input type="text" id="location" class="form-control" placeholder="e.g. Greams Road" required>
+          </div>
+
+          <!-- City -->
+          <div class="form-group">
+            <label for="city">City <span class="required">*</span></label>
+            <input type="text" id="city" class="form-control" placeholder="e.g. Chennai" required>
+          </div>
+
+          <!-- Contact Number -->
+          <div class="form-group">
+            <label for="contact">Contact Mobile Number <span class="required">*</span></label>
+            <input type="tel" id="contact" class="form-control" placeholder="10-digit Phone Number" pattern="[0-9]{10}" required>
+          </div>
+
+          <!-- Required Date -->
+          <div class="form-group full-width">
+            <label for="reqDate">Required Date <span class="required">*</span></label>
+            <input type="date" id="reqDate" class="form-control" required>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group full-width">
+            <label for="message">Additional Medical Message / Notes</label>
+            <textarea id="message" class="form-control" placeholder="Mention surgery details, room number, or specific instructions for donors."></textarea>
+          </div>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+          <button type="submit" class="btn btn-secondary btn-block">
+            <i class="fa-solid fa-paper-plane"></i> Submit Emergency Request
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-droplet"></i>
+          <span>BloodConnect</span>
+        </a>
+        <p>Connecting life-saving blood donors with patients during urgent medical emergencies.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="find-blood.html">Find Blood</a></li>
+          <li><a href="donor.html">Become a Donor</a></li>
+          <li><a href="emergency-request.html">Emergency Request</a></li>
+          <li><a href="requests.html">Active Requests</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Emergency Support</h4>
+        <ul class="footer-links">
+          <li><a href="requests.html">Active Request Feed</a></li>
+          <li><a href="find-blood.html">Search Donors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-phone"></i> Emergency Helpline: 1800-BLOOD-HELP</li>
+          <li><i class="fa-solid fa-envelope"></i> emergency@bloodconnect.org</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; 2026 BloodConnect Platform. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Global JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

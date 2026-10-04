@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloodConnect | Blood Donor & Emergency Request Platform</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Responsive Navigation
+       ========================================================================== -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-droplet"></i>
+        <span>BloodConnect</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="find-blood.html" class="nav-link">Find Blood</a></li>
+          <li><a href="donor.html" class="nav-link">Become a Donor</a></li>
+          <li><a href="emergency-request.html" class="nav-link">Emergency Request</a></li>
+          <li><a href="requests.html" class="nav-link">Requests</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="emergency-request.html" class="nav-link nav-btn"><i class="fa-solid fa-truck-medical"></i> Emergency</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Main Content Section
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Every Drop Can <span>Save a Life</span></h1>
+          <p>Connect blood donors with people in urgent need and help save lives through timely blood donation.</p>
+          <div class="hero-buttons">
+            <a href="find-blood.html" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Find Blood</a>
+            <a href="donor.html" class="btn btn-secondary"><i class="fa-solid fa-hand-holding-heart"></i> Become a Donor</a>
+            <a href="emergency-request.html" class="btn btn-outline"><i class="fa-solid fa-triangle-exclamation"></i> Emergency Request</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="images/blood-donation.jpg" alt="Blood Donation Medical Illustration" class="hero-img">
+          <div class="blood-drop-badge">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <div>
+              <strong>Instant Connection</strong>
+              <span>Direct Donor Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-card">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Donors Registered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-heart-circle-check"></i></div>
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Lives Helped</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-headset"></i></div>
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Emergency Support</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-vials"></i></div>
+            <div class="stat-number">8</div>
+            <div class="stat-label">Blood Groups</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+      <div class="container">
+        <div class="section-title">
+          <h2>How It Works</h2>
+          <p>Simple and efficient process to bridge the gap between donors and emergency patients.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon"><i class="fa-solid fa-id-card"></i></div>
+            <h3>Register as a Donor</h3>
+            <p>Fill out your details, blood type, location, and availability to join our donor directory.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+            <h3>Search for Blood</h3>
+            <p>Search available donors by blood group and city to locate nearby volunteers instantly.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon"><i class="fa-solid fa-bell"></i></div>
+            <h3>Respond to Emergency</h3>
+            <p>View real-time emergency requests posted by patients & hospitals and volunteer to donate.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+            <h3>Save a Life</h3>
+            <p>Coordinate directly with the hospital or requester and complete your life-saving blood donation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blood Groups Section -->
+    <section class="blood-groups-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Available Blood Groups</h2>
+          <p>Click on any blood group below to quickly filter verified available donors.</p>
+        </div>
+
+        <div class="blood-grid">
+          <a href="find-blood.html?group=A%2B" class="blood-type-card">
+            <div class="blood-type-badge">A+</div>
+            <p>View Donors</p>
+          </a>
+          <a href="find-blood.html?group=A-" class="blood-type-card">
+            <div class="blood-type-badge">A-</div>
+            <p>View Donors</p>
+          </a>
+          <a href="find-blood.html?group=B%2B" class="blood-type-card">
+            <div class="blood-type-badge">B+</div>
+            <p>View Donors</p>
+          </a>
+          <a href="find-blood.html?group=B-" class="blood-type-card">
+            <div class="blood-type-badge">B-</div>
+            <p>View Donors</p>
+          </a>
+          <a href="find-blood.html?group=AB%2B" class="blood-type-card">
+            <div class="blood-type-badge">AB+</div>
+            <p>Universal Recipient</p>
+          </a>
+          <a href="find-blood.html?group=AB-" class="blood-type-card">
+            <div class="blood-type-badge">AB-</div>
+            <p>View Donors</p>
+          </a>
+          <a href="find-blood.html?group=O%2B" class="blood-type-card">
+            <div class="blood-type-badge">O+</div>
+            <p>View Donors</p>
+          </a>
+          <a href="find-blood.html?group=O-" class="blood-type-card">
+            <div class="blood-type-badge">O-</div>
+            <p>Universal Donor</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action (CTA) Section -->
+    <section class="cta-section container">
+      <div class="cta-banner">
+        <h2>Someone's life may depend on your donation.</h2>
+        <p>Register today as a voluntary blood donor. Your small act of kindness can give someone a second chance at life.</p>
+        <a href="donor.html" class="btn"><i class="fa-solid fa-user-plus"></i> Become a Donor Now</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-droplet"></i>
+          <span>BloodConnect</span>
+        </a>
+        <p>BloodConnect is a frontend platform designed to connect voluntary blood donors with patients in urgent need during medical emergencies.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="find-blood.html">Find Blood</a></li>
+          <li><a href="donor.html">Become a Donor</a></li>
+          <li><a href="emergency-request.html">Emergency Request</a></li>
+          <li><a href="requests.html">Active Requests</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Blood Groups</h4>
+        <ul class="footer-links">
+          <li><a href="find-blood.html?group=O%2B">O Positive (O+)</a></li>
+          <li><a href="find-blood.html?group=O-">O Negative (O-)</a></li>
+          <li><a href="find-blood.html?group=A%2B">A Positive (A+)</a></li>
+          <li><a href="find-blood.html?group=B%2B">B Positive (B+)</a></li>
+          <li><a href="find-blood.html?group=AB%2B">AB Positive (AB+)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-phone"></i> Emergency Hotline: 1800-BLOOD-HELP</li>
+          <li><i class="fa-solid fa-envelope"></i> support@bloodconnect.org</li>
+          <li><i class="fa-solid fa-location-dot"></i> Healthcare Plaza, Medical City</li>
+          <li><i class="fa-solid fa-clock"></i> 24/7 Support Available</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; 2026 BloodConnect Platform. Frontend Web College Project. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Global JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
